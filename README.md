@@ -2,11 +2,13 @@
 # Credit Risk Prediction — Project Report
 
 1. Introduction
+
   The objective of this project is to build predictive models that can assess the credit risk of loan applicants using the German Credit dataset. Accurate credit risk     
   prediction is crucial for financial institutions to minimize default rates and make better lending decisions.
 
 2. Methodology
-  2.1 Data Setup
+
+   2.1 Data Setup
   Loaded dataset containing 1000 entries with 10 features.
   
   Features included demographic data (Age, Sex, Housing), financial data (Saving accounts, Checking account, Credit amount, Duration), and loan Purpose.
@@ -30,7 +32,8 @@
   Split the data into 80% training (800 records) and 20% testing (200 records) to evaluate model generalization.
 
 3. Model Building
-  3.1 Models Used
+
+   3.1 Models Used
   Logistic Regression: A simple, interpretable linear model suitable for binary classification tasks.
   
   Random Forest Classifier: A powerful ensemble technique that reduces variance and captures complex relationships.
@@ -40,6 +43,7 @@
   Each model was first trained with default parameters to establish baseline performance.
 
 4. Hyperparameter Tuning
+
   Grid Search Cross-Validation was applied to optimize model performance:
   
   
@@ -50,7 +54,8 @@
   Random Forest showed the highest cross-validation accuracy.
 
 5. Results
-  After tuning, models were evaluated on the test set:
+
+   After tuning, models were evaluated on the test set:
   
   
   Model	Test Accuracy
@@ -69,6 +74,7 @@
   Logistic Regression and SVM coefficients indicated similar feature trends.
 
 6. Conclusion
+
   Random Forest was selected as the final model because it provided the best balance of accuracy, robustness, and feature importance explainability.
   
   Hyperparameter tuning significantly improved model performance across all classifiers.
@@ -76,6 +82,7 @@
   The models confirmed that financial history (e.g., checking account status) and loan conditions (e.g., credit amount, duration) are critical factors in assessing credit    risk.
 
 7. Why This Approach?
+
   Data Preprocessing was crucial to handle missing values and categorical variables properly, ensuring no information leakage.
   
   Multiple Models were trained and compared to avoid bias toward any single method.
